@@ -1,9 +1,8 @@
-IP Networks Example
+NAT IP Networks Example
 ===================
 
-This terraform configuration creates an example IP network topology based on the scenario illustrated in the [Oracle Compute Cloud About IP Networks ](http://docs.oracle.com/cloud/latest/stcomputecs/STCSG/GUID-7299731F-7AEB-41F2-9938-2066CE7648F2.htm#STCSG-GUID-7299731F-7AEB-41F2-9938-2066CE7648F2) documentation.
+This terraform configuration creates an example NAT IP network topology.
 
-![IP Network Diagram](http://docs.oracle.com/cloud/latest/stcomputecs/STCSG/img/GUID-C4B6EEFA-27E1-40DA-BF8C-B77681DDDCD3-default.png)
 
 This example configures the IP Networks and IP Address on the IP Networks as shown in the diagram. The Private IP Addresses on the Shared Network, and two Public IP Addresses will vary as they are dynamically allocated.
 
@@ -11,8 +10,8 @@ In addition this example also configures an SSH key for access to all of the ins
 
 This configuration will create:
 
--	5 Compute Instances: `Instance_1`, `Instance_2`, `Instance_3`, `Instance_4`, `Instance_5`
--	3 IP Networks: `IP_Network1`, `IP_Network2`, `IP_Network3`
+-	5 Compute Instances: `Instance_1`, `Instance_2`, `Instance_3`
+-	3 IP Networks: `IP_Network1`, `IP_Network2`
 -	1 IP Network Exchange: `IPExchange`
 -	1 SSH Key: `ip-network-example-key`
 -	2 Public IP Reservations: `reservation1`, `reservation2`
